@@ -4,8 +4,13 @@ body {
 }
 
 #screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: .3;
   width: 100vw; height: 100vh;
-  background: black;
+  background: $white;
   display: flex;
   flex-wrap: wrap;
   i {
@@ -18,12 +23,25 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 100000px;
+    align-self: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
     &-el {
-        max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      
+      background-color: rgba(255, 255, 255, 0.5);
+      max-width: 400px;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+      padding: 2rem 3rem;
+      border-radius: 15px;
     }
 }

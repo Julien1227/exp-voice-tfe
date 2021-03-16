@@ -25,9 +25,10 @@ function createAnalyserNode(audioSource) {
 
 const color1 = document.querySelector('.color1');
 const color2 = document.querySelector('.color2');
-const span1 = document.getElementById('span-1');
-const span2 = document.getElementById('span-2');
-const span3 = document.getElementById('span-3');
+const span1 = document.getElementById('span-r');
+const span2 = document.getElementById('span-v');
+const span3 = document.getElementById('span-b');
+const span4 = document.getElementById('span-t');
 
 
 // get's html elements, loops over them & attaches a frequency from analysed data - what you do is up to you!
@@ -59,10 +60,12 @@ function animateStuff() {
       allRepeatedEls[i].style.opacity = "0.2";
     }
     console.log(frequencyData[1]);
-    color2.style.backgroundColor = 'hsl('+frequencyData[freqDataKey]*3.6+',  80%, 50%, 0.8)';
+    color2.style.backgroundColor = 'hsl('+frequencyData[i]+',  100%, 50%, 0.8)';
     color1.style.backgroundColor = 'rgba('+frequencyData[0]*3+', '+frequencyData[200]*3+', '+frequencyData[450]*3+', 1)';
-    span.innerHTML = frequencyData[200];
-    
+    span1.innerHTML = frequencyData[0];
+    span2.innerHTML = frequencyData[200];
+    span3.innerHTML = frequencyData[450];
+    span4.innerHTML = frequencyData[i];
   }
 
   /* COMMENTAIRE - COMMENT CA FONCTIONNE
