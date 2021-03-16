@@ -2,9 +2,11 @@ body {
   font-family: sans-serif;
   font-size: $size-text;
   line-height: 1.5;
-  color: $c-text;
+  color: $white;
 }
 
-.title {
-  color: $c-alt;
+h1 {
+  font-size: $h3;
+  text-align: center;
 }
+
