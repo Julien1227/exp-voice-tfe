@@ -1,5 +1,8 @@
-body {margin:0px; padding:0px;}
-h2 {font-family: "helvetica neue", "arial", sans-serif; text-align:center;}
+body {
+    margin:0px; 
+    padding:0px;
+}
+
 #screen {
   width: 100vw; height: 100vh;
   background: black;
@@ -9,4 +12,18 @@ h2 {font-family: "helvetica neue", "arial", sans-serif; text-align:center;}
     display: block;
     width: 10vw; height: 10vh;
   }
+}
+
+.color {
+    width: 200px;
+    height: 200px;
+    border-radius: 100000px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    &-el {
+        max-width: 400px;
+    }
 }
