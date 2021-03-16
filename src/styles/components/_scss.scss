@@ -1,0 +1,12 @@
+body {margin:0px; padding:0px;}
+h2 {font-family: "helvetica neue", "arial", sans-serif; text-align:center;}
+#screen {
+  width: 100vw; height: 100vh;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  i {
+    display: block;
+    width: 10vw; height: 10vh;
+  }
+}
