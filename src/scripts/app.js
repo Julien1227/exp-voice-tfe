@@ -61,7 +61,7 @@ function animateStuff() {
     }
     console.log(frequencyData[1]);
     color2.style.backgroundColor = 'hsl('+frequencyData[i]+',  100%, 50%, 0.8)';
-    color1.style.backgroundColor = 'rgba('+frequencyData[0]*3+', '+frequencyData[200]*3+', '+frequencyData[450]*3+', 1)';
+    color1.style.backgroundColor = 'rgba('+frequencyData[100]*2.5+', '+frequencyData[250]*2.5+', '+frequencyData[500]*2.5+', 1)';
     span1.innerHTML = frequencyData[0];
     span2.innerHTML = frequencyData[200];
     span3.innerHTML = frequencyData[450];

@@ -1,10 +1,13 @@
 body {
     margin:0px; 
     padding:0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -10;
@@ -32,8 +35,10 @@ body {
 }
 
 .container {
+  margin-top: 10vh;
     display: flex;
-    justify-content: space-around;
+    align-items: center;    
+    flex-direction: column;
     &-el {
       display: flex;
       flex-direction: column;
@@ -43,5 +48,13 @@ body {
       box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
       padding: 2rem 3rem;
       border-radius: 15px;
+      margin: 2rem 0;
     }
+}
+
+@media(min-width:1000px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

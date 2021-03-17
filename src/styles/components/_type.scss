@@ -5,9 +5,13 @@ body {
   color: $black;
 }
 
-h1 {
+.title {
   font-size: $h3;
   text-align: center;
+  
+  &-small {
+    text-align: center;
+  }
 }
 
 #span {
